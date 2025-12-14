@@ -97,7 +97,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--font-serif);
+    font-family: var(--font-sans);
     color: var(--color-white);
     margin-bottom: var(--spacing-sm);
     line-height: 1.2;
@@ -186,7 +186,7 @@ h6 {
 }
 
 .logo {
-    font-family: var(--font-serif);
+    font-family: var(--font-sans);
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--color-white);
