@@ -1,8 +1,8 @@
 :root {
     /* Colors */
-    --color-primary: #800000;
-    --color-primary-light: #a31515;
-    --color-primary-dark: #580000;
+    --color-primary: #D4AC0D;
+    --color-primary-light: #F1C40F;
+    --color-primary-dark: #9A7D0A;
 
     --color-bg: #121212;
     --color-surface: #1e1e1e;
@@ -231,7 +231,7 @@ h6 {
     background-image:
         linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-        radial-gradient(circle at 50% 50%, #351010 0%, var(--color-bg) 80%);
+        radial-gradient(circle at 50% 50%, #2E2502 0%, var(--color-bg) 80%);
     background-size: 40px 40px, 40px 40px, 100% 100%;
 }
 
@@ -450,7 +450,7 @@ textarea:focus {
     border-radius: 0;
     margin: 3rem auto 1.5rem;
     border: none;
-    box-shadow: 0 0 25px rgba(128, 0, 0, 0.4);
+    box-shadow: 0 0 25px rgba(212, 172, 13, 0.4);
     display: block;
 }
 
