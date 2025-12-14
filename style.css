@@ -194,6 +194,9 @@ h6 {
 
 .logo .dot {
     color: var(--color-primary);
+    font-size: 1.5em;
+    font-weight: 800;
+    line-height: 0;
 }
 
 .nav-links {
