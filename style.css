@@ -440,10 +440,10 @@ textarea:focus {
 }
 
 .profile-img {
-    width: 300px;
+    width: 220px;
     height: auto;
     border-radius: 0;
-    margin: 0 auto 1.5rem;
+    margin: 3rem auto 1.5rem;
     border: none;
     box-shadow: 0 0 25px rgba(128, 0, 0, 0.4);
     display: block;
