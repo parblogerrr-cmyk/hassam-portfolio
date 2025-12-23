@@ -58,180 +58,183 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">Hassam<span class="dot">.</span></a>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#blog" class="nav-link">Blog</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="container hero-content">
-                <img src="hassambg.png" alt="Muhammad Hassam" class="profile-img animate-up">
-                <p class="subtitle animate-up delay-1">Hello, I'm</p>
-                <h1 class="animate-up delay-2">Muhammad Hassam</h1>
-                <h2 class="animate-up delay-3">Linguistics Student & <span class="highlight">Creative Writer</span></h2>
-                <p class="description animate-up delay-4">
-                    Pursuing a Bachelors of English at Air University, Islamabad.
-                    Merging the art of language with digital design.
-                </p>
-                <div class="cta-group animate-up delay-5">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-outline">Contact Me</a>
-                </div>
+    <div class="layout-wrapper">
+        <header class="sidebar">
+            <div class="sidebar-header">
+                <a href="#" class="logo">
+                    <img src="hassambg.png" alt="Muhammad Hassam" class="sidebar-profile-img">
+                </a>
+                <h1>Muhammad Hassam</h1>
+                <p class="tagline">Linguistics Student & <br> Creative Writer</p>
             </div>
-        </section>
 
-        <!-- About Section -->
-        <section id="about" class="about section-padding">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-subtitle">Who I Am</span>
-                    <h2 class="section-title">About Me</h2>
-                </div>
-                <div class="about-grid">
-                    <div class="about-content">
-                        <p>
-                            I am currently creating my path in the world of Linguistics at Air University, Islamabad.
-                            My passion lies in understanding the nuances of language and how it shapes human connection.
-                        </p>
-                        <p>
-                            Beyond my studies, I explore the realms of design and creative writing. This portfolio
-                            serves as a
-                            canvas for my thoughts, projects, and professional journey.
-                        </p>
-                        <ul class="skills-list">
-                            <li><i class="fa-solid fa-pen-nib"></i> Creative Writing</li>
-                            <li><i class="fa-solid fa-language"></i> Linguistics</li>
-                            <li><i class="fa-solid fa-palette"></i> Digital Design</li>
-                            <li><i class="fa-solid fa-layer-group"></i> Content Strategy</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Portfolio</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects section-padding">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-subtitle">My Work</span>
-                    <h2 class="section-title">Featured Projects</h2>
-                </div>
-                <!-- Project Grid Placeholder -->
-                <div class="grid-layout projects-grid">
-                    <!-- Projects will be populated here -->
-                    <article class="card project-card">
-                        <div class="card-image">
-                            <!-- Placeholder image generated via CSS/JS later or use color block -->
-                            <div class="placeholder-img"></div>
-                        </div>
-                        <div class="card-content">
-                            <h3>Design Project Alpha</h3>
-                            <p>A branding exploration for a local startup, focusing on minimalist aesthetics.</p>
-                            <a href="#" class="btn-text">View Details <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </article>
-                    <article class="card project-card">
-                        <div class="card-image">
-                            <div class="placeholder-img"></div>
-                        </div>
-                        <div class="card-content">
-                            <h3>Linguistic Research Paper</h3>
-                            <p>An analysis of sociolinguistic patterns in modern digital communication.</p>
-                            <a href="#" class="btn-text">Read Paper <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Blog Section -->
-        <section id="blog" class="blog section-padding">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-subtitle">My Writings</span>
-                    <h2 class="section-title">Latest Articles</h2>
-                </div>
-                <div class="grid-layout blog-grid">
-                    <article class="card blog-card">
-                        <div class="card-content">
-                            <span class="date">Dec 14, 2025</span>
-                            <h3>The Future of English Studies</h3>
-                            <p>Exploring how technology impacts the way we study and understand English literature
-                                today.</p>
-                            <a href="#" class="read-more">Read Article</a>
-                        </div>
-                    </article>
-                    <article class="card blog-card">
-                        <div class="card-content">
-                            <span class="date">Nov 20, 2025</span>
-                            <h3>Design & Language</h3>
-                            <p>How visual hierarchy shares principles with sentence structure and syntax.</p>
-                            <a href="#" class="read-more">Read Article</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact section-padding">
-            <div class="container">
-                <div class="contact-wrapper">
-                    <div class="section-header text-center">
-                        <span class="section-subtitle">Get In Touch</span>
-                        <h2 class="section-title">Let's Connect</h2>
-                        <p>Feel free to reach out for collaborations or just a friendly hello.</p>
-                    </div>
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <a href="#">M. Hassam</a>
-                </div>
+            <div class="sidebar-footer">
                 <div class="social-links">
                     <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="mailto:email@example.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 M. Hassam <br> All rights reserved.</p>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Muhammad Hassam. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
 
+            <button class="mobile-toggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </header>
+
+        <main class="content-area">
+            <!-- Hero Section -->
+            <section id="home" class="hero-section">
+                <div class="hero-bg-image"></div>
+                <div class="hero-content">
+                    <h2>Hello, I'm <span class="accent-text">Muhammad Hassam</span></h2>
+                    <p class="hero-desc">I combine the precision of linguistics with the boundless creativity of digital
+                        design.</p>
+                    <a href="#projects" class="btn btn-primary">My Portfolio</a>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="section about-section">
+                <div class="section-container">
+                    <span class="section-label">About Me</span>
+                    <h2 class="section-heading">Biography</h2>
+                    <div class="about-grid">
+                        <div class="about-text">
+                            <p>I am a student at Air University, Islamabad, navigating the intersection of language
+                                structure and creative expression. My work creates bridges between technical
+                                understanding and artistic delivery.</p>
+                            <p>Whether analyzing syntax or crafting a visual identity, my goal is clear communication
+                                that resonates.</p>
+                            <div class="services-list">
+                                <div class="service-item">
+                                    <i class="fa-solid fa-code"></i>
+                                    <h4>Web Design</h4>
+                                </div>
+                                <div class="service-item">
+                                    <i class="fa-solid fa-pen-fancy"></i>
+                                    <h4>Creative Writing</h4>
+                                </div>
+                                <div class="service-item">
+                                    <i class="fa-solid fa-book-open"></i>
+                                    <h4>Linguistics</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-stats">
+                            <!-- Optional stats or image could go here -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section projects-section">
+                <div class="section-container">
+                    <span class="section-label">My Work</span>
+                    <h2 class="section-heading">Recent Portfolio</h2>
+
+                    <div class="portfolio-grid">
+                        <article class="portfolio-item">
+                            <div class="portfolio-img" style="background-color: #e0e0e0;"></div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Brand Identity</h3>
+                                    <span>Design</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="portfolio-item">
+                            <div class="portfolio-img" style="background-color: #d4d4d4;"></div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Linguistic Analysis</h3>
+                                    <span>Research</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="portfolio-item">
+                            <div class="portfolio-img" style="background-color: #c0c0c0;"></div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Creative Writing</h3>
+                                    <span>Blog</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Blog Section -->
+            <section id="blog" class="section blog-section">
+                <div class="section-container">
+                    <span class="section-label">Read</span>
+                    <h2 class="section-heading">My Blog</h2>
+                    <div class="blog-grid">
+                        <article class="blog-post">
+                            <div class="blog-img"></div>
+                            <div class="blog-content">
+                                <span class="date">Dec 14, 2025</span>
+                                <h3>The Future of English Studies</h3>
+                                <p>Technological impacts on modern literature studies.</p>
+                                <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+                        <article class="blog-post">
+                            <div class="blog-img"></div>
+                            <div class="blog-content">
+                                <span class="date">Nov 20, 2025</span>
+                                <h3>Design & Language</h3>
+                                <p>Visual hierarchy vs sentence structure.</p>
+                                <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section contact-section">
+                <div class="section-container">
+                    <span class="section-label">Contact</span>
+                    <h2 class="section-heading">Get in Touch</h2>
+                    <div class="contact-wrapper">
+                        <div class="contact-info">
+                            <p>Available for freelance work and research collaborations.</p>
+                            <ul class="contact-details">
+                                <li><i class="fa-solid fa-location-dot"></i> Islamabad, Pakistan</li>
+                                <li><i class="fa-solid fa-envelope"></i> email@example.com</li>
+                                <li><i class="fa-solid fa-phone"></i> +92 300 1234567</li>
+                            </ul>
+                        </div>
+                        <form class="contact-form">
+                            <div class="form-row">
+                                <input type="text" placeholder="Name" required>
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                            <input type="text" placeholder="Subject">
+                            <textarea placeholder="Message" rows="5"></textarea>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
     <script src="script.js"></script>
 </body>
 
