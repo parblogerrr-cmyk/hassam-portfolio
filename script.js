@@ -1,85 +1,50 @@
+// Minimal Portfolio Logic
+
 document.addEventListener('DOMContentLoaded', () => {
-    // Mobile Sidebar Toggle
-    const mobileToggle = document.querySelector('.mobile-toggle');
-    const sidebar = document.querySelector('.sidebar');
-    const overlay = document.createElement('div'); // Overlay for mobile when sidebar is open
-    
-    // Add overlay class and append to body
-    overlay.className = 'sidebar-overlay';
-    document.body.appendChild(overlay);
+    const views = document.querySelectorAll('.view');
+    const navLinks = document.querySelectorAll('[data-target]');
+    const menuOverlay = document.querySelector('.menu-overlay');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menuClose = document.querySelector('.menu-close');
 
-    // Style the overlay dynamically (or could be in CSS)
-    overlay.style.position = 'fixed';
-    overlay.style.top = '0';
-    overlay.style.left = '0';
-    overlay.style.width = '100%';
-    overlay.style.height = '100%';
-    overlay.style.background = 'rgba(0,0,0,0.5)';
-    overlay.style.zIndex = '900'; // Below sidebar (1000)
-    overlay.style.opacity = '0';
-    overlay.style.visibility = 'hidden';
-    overlay.style.transition = 'all 0.3s ease';
+    // Navigation Logic
+    function switchView(targetId) {
+        // Remove active class from current view
+        views.forEach(view => {
+            view.classList.remove('active');
+        });
 
-    function toggleSidebar() {
-        if (!sidebar || !mobileToggle) return;
-        
-        sidebar.classList.toggle('active');
-        const isActive = sidebar.classList.contains('active');
-        
-        // Toggle Overlay
-        overlay.style.opacity = isActive ? '1' : '0';
-        overlay.style.visibility = isActive ? 'visible' : 'hidden';
+        // Add active class to target view
+        const targetView = document.getElementById(targetId);
+        if (targetView) {
+            targetView.classList.add('active');
+        }
 
-        // Animate Toggle Icon (Simple swap for now or css class)
-        const icon = mobileToggle.querySelector('i');
-        if (icon) {
-            if (isActive) {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-xmark');
-            } else {
-                icon.classList.remove('fa-xmark');
-                icon.classList.add('fa-bars');
-            }
+        // Close menu if open
+        if (menuOverlay.classList.contains('active')) {
+            toggleMenu();
         }
     }
 
-    if (mobileToggle) {
-        mobileToggle.addEventListener('click', toggleSidebar);
-    }
-
-    if (overlay) {
-        overlay.addEventListener('click', toggleSidebar);
-    }
-
-    // Close sidebar when clicking a nav link
-    const navLinks = document.querySelectorAll('.nav-link');
+    // Event Listeners for Links
     navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            if (sidebar.classList.contains('active')) {
-                toggleSidebar();
-            }
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute('data-target');
+            switchView(targetId);
         });
     });
 
-    // Active Link Highlighting on Scroll
-    const sections = document.querySelectorAll('section');
-    const navItems = document.querySelectorAll('.nav-link');
+    // Menu Toggle Logic
+    function toggleMenu() {
+        menuOverlay.classList.toggle('active');
 
-    window.addEventListener('scroll', () => {
-        let current = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (scrollY >= (sectionTop - sectionHeight / 3)) {
-                current = section.getAttribute('id');
-            }
-        });
+        // Optional: Animate hamburger icon or swap to close icon logic inside the button
+        // For now, we rely on the overlay being visible/hidden
+    }
 
-        navItems.forEach(item => {
-            item.classList.remove('active');
-            if (item.getAttribute('href').includes(current)) {
-                item.classList.add('active');
-            }
-        });
-    });
+    if (menuToggle) menuToggle.addEventListener('click', toggleMenu);
+    if (menuClose) menuClose.addEventListener('click', toggleMenu);
+
+    // Initial check (optional, but CSS handles default active view)
 });
