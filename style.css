@@ -224,13 +224,27 @@ ul {
     height: 100%;
     opacity: 0;
     pointer-events: none;
+    opacity: 0;
+    pointer-events: none;
     transition: opacity var(--transition-speed) var(--easing), transform var(--transition-speed) var(--easing);
     transform: scale(0.98);
     /* Subtle zoom effect */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* Ensure stacked content */
     align-items: center;
+    justify-content: flex-start;
+    /* Start from top to allow scroll */
     padding: 6rem 10vw;
+    overflow-y: auto;
+    /* Enable vertical scroll */
+    scrollbar-width: none;
+    /* Hide scrollbar Firefox */
+}
+
+/* Hide scrollbar Chrome/Safari/Edge */
+.view::-webkit-scrollbar {
+    display: none;
 }
 
 .view.active {
