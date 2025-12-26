@@ -156,10 +156,10 @@
                     <div class="projects-category">
                         <h3 class="category-title">Discourse Studies</h3>
                         <div class="projects-list">
-                            <a href="#" class="project-item">
-                                <span class="project-num">01</span>
-                                <span class="project-name">Analysis of Political Rhetoric</span>
-                                <span class="project-cat">Research</span>
+                            <a href="#discourse-list" class="project-item" data-target="discourse-list">
+                                <span class="project-num">14</span>
+                                <span class="project-name">Explore Discourse Collection</span>
+                                <span class="project-cat">Articles</span>
                             </a>
                         </div>
                     </div>
@@ -194,10 +194,41 @@
                     </div>
                 </div>
             </div>
-        </section>
+            <!-- Discourse List View -->
+            <section id="discourse-list" class="view">
+                <div class="view-content">
+                    <div class="content-wrapper">
+                        <button class="back-btn" data-target="projects"><i class="fa-solid fa-arrow-left"></i> Back to
+                            Portfolio</button>
+                        <span class="section-label">Discourse Studies</span>
+                        <h2>Table of Contents</h2>
+                        <div class="toc-list" id="toc-container">
+                            <!-- Items will be injected by JS -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Article Reader View -->
+            <section id="article-view" class="view">
+                <div class="view-content">
+                    <div class="content-wrapper">
+                        <button class="back-btn" data-target="discourse-list"><i class="fa-solid fa-arrow-left"></i>
+                            Back to Topics</button>
+                        <article class="article-reader">
+                            <span class="section-label">Reading</span>
+                            <h2 id="article-title">Title Here</h2>
+                            <div class="article-body" id="article-content">
+                                <!-- Content injected by JS -->
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
 
     </main>
 
+    <script src="discourseData.js"></script>
     <script src="script.js"></script>
 </body>
 

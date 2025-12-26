@@ -485,3 +485,87 @@ ul {
         font-size: 1.5rem;
     }
 }
+
+/* ===========================
+   Discourse Studies & Article Reader
+   =========================== */
+.back-btn {
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.back-btn:hover {
+    color: var(--text-color);
+}
+
+.toc-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.toc-item {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toc-item:hover {
+    padding-left: 1rem;
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.toc-number {
+    color: var(--accent-color);
+    margin-right: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.toc-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    flex-grow: 1;
+}
+
+.article-reader {
+    max-width: 800px;
+    animation: fadeIn 0.5s ease;
+}
+
+.article-body {
+    margin-top: 3rem;
+    line-height: 1.8;
+    color: #dadada;
+    font-size: 1.1rem;
+}
+
+.article-body p {
+    margin-bottom: 2rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

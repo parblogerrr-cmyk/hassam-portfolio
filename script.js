@@ -47,4 +47,48 @@ document.addEventListener('DOMContentLoaded', () => {
     if (menuClose) menuClose.addEventListener('click', toggleMenu);
 
     // Initial check (optional, but CSS handles default active view)
+
+    // ===========================
+    // Discourse Studies Logic
+    // ===========================
+    const tocContainer = document.getElementById('toc-container');
+    const articleTitle = document.getElementById('article-title');
+    const articleContent = document.getElementById('article-content');
+
+    // Render TOC
+    if (typeof discourseWritings !== 'undefined' && tocContainer) {
+        discourseWritings.forEach((item, index) => {
+            const tocItem = document.createElement('div');
+            tocItem.className = 'toc-item';
+            tocItem.innerHTML = `
+                <span class="toc-number">${(index + 1).toString().padStart(2, '0')}</span>
+                <span class="toc-title">${item.title}</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            `;
+
+            tocItem.addEventListener('click', () => {
+                openArticle(item);
+            });
+
+            tocContainer.appendChild(tocItem);
+        });
+    }
+
+    function openArticle(item) {
+        if (articleTitle) articleTitle.textContent = item.title;
+        if (articleContent) articleContent.innerHTML = item.content;
+        switchView('article-view');
+        window.scrollTo(0, 0);
+    }
+
+    // Attach click event for "Discourse Studies" in the main Projects list
+    // Finding the "Discourse Studies" project item - we'll make the header clickable or the placeholder item
+    // The user had a placeholder item in index.html, let's target the "Analysis of Political Rhetoric" item to open the list
+    // OR we should have updated the link in index.html. 
+    // Let's quickly check index.html again. I see I left the placeholder items. 
+    // I will simply add a click handler to any element with data-target="discourse-list"
+
+    // Back Buttons (handled by generic navLinks if they have data-target, 
+    // but the generic handler does preventDefault, so it works fine)
+
 });
