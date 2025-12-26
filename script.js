@@ -7,7 +7,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.querySelector('.menu-toggle');
     const menuClose = document.querySelector('.menu-close');
     const globalBg = document.getElementById('global-bg');
-    const DEFAULT_BG = 'url("bg_red.png")'; // Make sure this matches your style.css default
+
+    // Background Configuration
+    const DEFAULT_BG = 'url("bg_red.png")';
+    const sectionBackgrounds = {
+        'home': 'url("bg_red.png")',
+        'about': 'url("visual_artifacts_1766764076674.png")',      // Texture/Craft for personal identity
+        'projects': 'url("multilingual_road_1766764060824.png")',  // Road/Journey for portfolio
+        'contact': 'url("social_gathering_1766764042186.png")',    // Community/People for contact
+        'discourse-list': 'url("mountain_discourse_1766764024919.png")' // Mountains for the discourse TOC
+    };
 
     // Navigation Logic
     function switchView(targetId) {
@@ -22,12 +31,17 @@ document.addEventListener('DOMContentLoaded', () => {
             targetView.classList.add('active');
         }
 
+        // Close menu if open
         if (menuOverlay.classList.contains('active')) {
             toggleMenu();
         }
 
-        // Reset background if not viewing an article
-        if (targetId !== 'article-view' && globalBg) {
+        // Handle Background Switching
+        if (targetId === 'article-view') {
+            // Article view bg is handled by openArticle(), do nothing here
+        } else if (sectionBackgrounds[targetId] && globalBg) {
+            globalBg.style.backgroundImage = sectionBackgrounds[targetId];
+        } else if (globalBg) {
             globalBg.style.backgroundImage = DEFAULT_BG;
         }
     }
