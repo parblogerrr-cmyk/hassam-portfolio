@@ -364,6 +364,19 @@ ul {
 /* ===========================
    Projects View
    =========================== */
+.projects-category {
+    margin-bottom: 4rem;
+}
+
+.category-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--accent-color);
+}
+
 .projects-list {
     display: flex;
     flex-direction: column;
