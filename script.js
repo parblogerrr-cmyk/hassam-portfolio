@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuOverlay = document.querySelector('.menu-overlay');
     const menuToggle = document.querySelector('.menu-toggle');
     const menuClose = document.querySelector('.menu-close');
+    const globalBg = document.getElementById('global-bg');
+    const DEFAULT_BG = 'url("bg_red.png")'; // Make sure this matches your style.css default
 
     // Navigation Logic
     function switchView(targetId) {
@@ -20,9 +22,13 @@ document.addEventListener('DOMContentLoaded', () => {
             targetView.classList.add('active');
         }
 
-        // Close menu if open
         if (menuOverlay.classList.contains('active')) {
             toggleMenu();
+        }
+
+        // Reset background if not viewing an article
+        if (targetId !== 'article-view' && globalBg) {
+            globalBg.style.backgroundImage = DEFAULT_BG;
         }
     }
 
@@ -77,6 +83,12 @@ document.addEventListener('DOMContentLoaded', () => {
     function openArticle(item) {
         if (articleTitle) articleTitle.textContent = item.title;
         if (articleContent) articleContent.innerHTML = item.content;
+
+        // Change background
+        if (globalBg && item.image) {
+            globalBg.style.backgroundImage = `url('${item.image}')`;
+        }
+
         switchView('article-view');
         window.scrollTo(0, 0);
     }
