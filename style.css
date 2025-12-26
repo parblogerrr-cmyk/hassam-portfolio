@@ -328,6 +328,10 @@ ul {
     font-size: 1.5rem;
     max-width: 600px;
     color: #ccc;
+    margin-bottom: 1.5rem;
+}
+
+.large-text:last-of-type {
     margin-bottom: 4rem;
 }
 
