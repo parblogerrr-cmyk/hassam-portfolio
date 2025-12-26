@@ -263,10 +263,18 @@ ul {
 
 .hero-role {
     font-size: 1.2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     color: var(--accent-color);
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+.hero-tagline {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 4rem auto;
+    color: #ccc;
+    line-height: 1.5;
 }
 
 .hero-actions {
