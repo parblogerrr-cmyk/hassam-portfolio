@@ -191,5 +191,55 @@ const creativeNonFictionWritings = [
 
             <p>These are the sentences that play in my head like a background song. They aren't written in any book, but I’ve heard them a thousand times from my mother, my aunts, and my teachers. They are meant to protect me, but sometimes they feel like a fence. I’m learning which rules to keep and which ones are okay to break as I grow up.</p>
         `
+    },
+    {
+        id: 7,
+        title: "The Weight of a Phone Call",
+        image: "visual_artifacts_1766764076674.png",
+        content: `
+            <p>There is a specific kind of silence that follows a phone call with home. I hang up, and for a few minutes, the hostel room feels much smaller than it did before. On the screen, it says "Call Ended: 15 minutes," but the sound of my mother’s voice and the background noise of my siblings laughing stays in the room with me.</p>
+
+            <p>Being away at university is supposed to be about independence, but sometimes independence feels a lot like being untethered. You realize that you are now the person responsible for your own laundry, your own meals, and your own moods. I find myself missing the small, annoying things—the way the gate creaks back home or the way my dad asks the same question every evening. I’m learning that moving forward doesn't mean leaving everything behind; it just means carrying those voices in your pocket while you try to build a life of your own.</p>
+        `
+    },
+    {
+        id: 8,
+        title: "The Art of Doing Nothing",
+        image: "visual_artifacts_1766764076674.png",
+        content: `
+            <p>In a world that celebrates "the hustle," I am starting to find beauty in the gaps. We are taught that every hour must be productive—that if we aren't studying, we should be networking, and if we aren't networking, we should be "improving" ourselves. But some of my best thoughts have come when I was doing absolutely nothing.</p>
+
+            <p>I think of the moments spent sitting on the campus grass, watching the shadows of the trees grow longer. Or the minutes spent staring out the window of a moving bus. We need these empty spaces. Without them, life is just a long list of tasks. I’ve realized that my mind needs time to breathe, just like my lungs do. Resting isn't "wasting time"; it’s the time where I actually get to be myself, away from the pressure of being a student or a leader.</p>
+        `
+    },
+    {
+        id: 9,
+        title: "The Faces in the Hallway",
+        image: "visual_artifacts_1766764076674.png",
+        content: `
+            <p>I’ve started playing a game during the ten-minute break between classes. I watch the faces of people passing by and try to imagine one thing they are happy about today.</p>
+
+            <p>There is the guy who is walking a little faster than everyone else, probably heading to meet someone he likes. There is the girl leaning against the pillar, eyes closed for a second, probably relieved that a hard presentation is finally over. We all share this space, but we are all in different chapters of our lives. It’s a strange, comforting thought. You are never truly alone in your stress or your joy; there is always someone else in the same hallway feeling something just as deeply as you are.</p>
+        `
+    },
+    {
+        id: 10,
+        title: "Learning to Let Go of \"Perfect\"",
+        image: "visual_artifacts_1766764076674.png",
+        content: `
+            <p>I used to be terrified of making a mistake in public. Whether it was a slip of the tongue while hosting an event or a wrong answer in a seminar, I would replay the moment in my head for days. I wanted to be the version of myself that was always polished, always "on."</p>
+
+            <p>But lately, I’ve found that people actually connect more with your mess than your perfection. When I trip over a word and laugh at myself, the audience relaxes. When I admit to a friend that I’m struggling, they usually breathe a sigh of relief and say, "Me too." I am learning that the cracks are where the light gets in. I’m trying to be "real" instead of "perfect." It’s much less exhausting, and honestly, it’s much more fun.</p>
+        `
+    },
+    {
+        id: 11,
+        title: "The Rain on the Tin Roof",
+        image: "visual_artifacts_1766764076674.png",
+        content: `
+            <p>There is a certain mood that comes with a rainy afternoon on campus. The construction site turns into a landscape of mud, and the sterile white walls of the building finally seem to soften. Everyone huddles under the small awnings, sharing umbrellas and space.</p>
+
+            <p>Rain has a way of slowing everything down. It forces us to stop running. In those moments, the "crisis" of the new campus doesn't matter as much. The deadlines feel a little further away. We stand there, listening to the rhythm of the water, reminded that nature doesn't care about our schedules. It’s a quiet reminder to just exist for a moment, to feel the cool air, and to be thankful for a roof over our heads, no matter how uninspiring that roof might be.</p>
+        `
     }
 ];
