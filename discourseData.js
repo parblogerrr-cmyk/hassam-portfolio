@@ -126,3 +126,45 @@ const discourseWritings = [
         `
     }
 ];
+
+const creativeNonFictionWritings = [
+    {
+        id: 1,
+        title: "The New Routine",
+        image: "visual_artifacts_1766764076674.png", // Using a default existing image for now
+        content: `
+            <p>The first few days at the new university felt like wearing a pair of shoes that were a size too small. Everything was functional, but nothing felt quite right. The hallways are long and painted a sterile white that reminds me of a doctor’s office, and the stairs are steep and tiring. Looking around, I didn't see a "campus"; I saw a construction project. Piles of bricks and the constant hum of machinery took the place of the green trees and quiet corners I had imagined.</p>
+
+            <p>But as the week went on, I found my spots. I found the corner of the library where the sun hits the desk at exactly 2:00 PM. I found the cafeteria bench where the tea is actually hot. Most importantly, I found that my friends make the grey walls look brighter. We complain about the dust and the long walks together, and in that complaining, we’ve made this place ours. It isn't a beautiful building yet, but it’s becoming a home because we are in it.</p>
+
+            <h3>Why I Put Pen to Paper</h3>
+            <p>I don't write because I want to be famous or because I have all the answers. I write because my head gets too crowded. Sometimes, a day feels so full of small moments—a joke shared with a stranger, a sad song on the radio, the way the sky looked before it rained—that I feel like I might burst if I don't write them down.</p>
+
+            <p>Writing is my way of catching things before they fall. If I don't record how I felt on a Tuesday afternoon, that feeling disappears forever. I use simple words because those are the ones that feel true. I write to understand myself, to figure out why I’m happy or why I’m anxious. It’s like talking to a friend who never interrupts and always listens.</p>
+
+            <h3>The "Yes" Trap</h3>
+            <p>For a long time, I thought being helpful meant never saying "no." If a teacher needed a volunteer, my hand went up. If a friend needed a favor, I was there. I was the person everyone could count on, and I liked that reputation. I thought that by doing everything, I was becoming a better person.</p>
+
+            <p>But eventually, I stopped enjoying the things I loved. Hosting events became a chore. Helping others felt like a heavy weight. I realized that by saying "yes" to everyone else, I was saying "no" to myself. I learned the hard way that you have to save some energy for your own life. Now, I’m learning that "no" is a healthy word. It doesn't mean I’m lazy; it means I’m taking care of my own heart so I have something left to give later.</p>
+
+            <h3>A Campus Observation: What We Fear</h3>
+            <p>We decided to walk around the university today and ask people a simple question: "What are you afraid of?" We expected people to talk about big things, like spiders or heights. Instead, the answers were much closer to home.</p>
+
+            <p>One student near the juice stall said she was afraid of failing her midterms because she didn't want to let her parents down.</p>
+            <p>A group of boys laughing near the gate grew quiet when we asked. One admitted he was afraid of graduating and not finding a job.</p>
+            <p>A girl sitting alone in the courtyard told us she was afraid of being forgotten by her friends back home.</p>
+
+            <p>It made me realize that we are all walking around with these little clouds of worry over our heads. We look confident on the outside, but inside, we are all just trying to make it through.</p>
+
+            <h3>Small Town, Big Dreams</h3>
+            <p>I grew up in a place where everyone knew everyone’s business. It was a town of dusty streets and predictable afternoons. Being the oldest child, I was the one who had to set the example. I had to be the responsible one, the one who didn't make mistakes.</p>
+
+            <p>Coming to the city for university was like stepping into a different world. At first, the noise was too loud and the pace was too fast. But I realized that the language I studied gave me a bridge between my quiet hometown and this busy new life. I’m still that girl from the small town, but now I’ve found a voice that can be heard even in a crowded room.</p>
+
+            <h3>The Advice We Carry</h3>
+            <p>Don't stay out too late; make sure your clothes are ironed; don't speak until you're spoken to; learn how to make the perfect cup of tea; always smile even when you're tired; don't be too loud or people will think you're rude; save your money; keep your room tidy; don't trust strangers too easily; remember where you came from.</p>
+
+            <p>These are the sentences that play in my head like a background song. They aren't written in any book, but I’ve heard them a thousand times from my mother, my aunts, and my teachers. They are meant to protect me, but sometimes they feel like a fence. I’m learning which rules to keep and which ones are okay to break as I grow up.</p>
+        `
+    }
+];

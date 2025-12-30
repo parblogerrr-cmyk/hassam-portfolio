@@ -12,10 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const DEFAULT_BG = 'url("bg_red.png")';
     const sectionBackgrounds = {
         'home': 'url("bg_red.png")',
-        'about': 'url("visual_artifacts_1766764076674.png")',      // Texture/Craft for personal identity
-        'projects': 'url("multilingual_road_1766764060824.png")',  // Road/Journey for portfolio
-        'contact': 'url("social_gathering_1766764042186.png")',    // Community/People for contact
-        'discourse-list': 'url("mountain_discourse_1766764024919.png")' // Mountains for the discourse TOC
+        'about': 'url("visual_artifacts_1766764076674.png")',
+        'projects': 'url("multilingual_road_1766764060824.png")',
+        'contact': 'url("social_gathering_1766764042186.png")',
+        'discourse-list': 'url("mountain_discourse_1766764024919.png")',
+        'creative-list': 'url("visual_artifacts_1766764076674.png")'
     };
 
     // Navigation Logic
@@ -47,56 +48,73 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Event Listeners for Links
-    navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
+    document.addEventListener('click', (e) => {
+        const link = e.target.closest('[data-target]');
+        if (link) {
             e.preventDefault();
             const targetId = link.getAttribute('data-target');
             switchView(targetId);
-        });
+        }
     });
 
     // Menu Toggle Logic
     function toggleMenu() {
         menuOverlay.classList.toggle('active');
-
-        // Optional: Animate hamburger icon or swap to close icon logic inside the button
-        // For now, we rely on the overlay being visible/hidden
     }
 
     if (menuToggle) menuToggle.addEventListener('click', toggleMenu);
     if (menuClose) menuClose.addEventListener('click', toggleMenu);
 
-    // Initial check (optional, but CSS handles default active view)
 
     // ===========================
-    // Discourse Studies Logic
+    // Discourse & Creative Logic
     // ===========================
     const tocContainer = document.getElementById('toc-container');
+    const creativeTocContainer = document.getElementById('creative-toc-container');
     const articleTitle = document.getElementById('article-title');
     const articleContent = document.getElementById('article-content');
+    const articleBackBtns = document.querySelectorAll('#article-view .back-btn');
 
-    // Render TOC
+    // Render Discourse TOC
     if (typeof discourseWritings !== 'undefined' && tocContainer) {
         discourseWritings.forEach((item, index) => {
-            const tocItem = document.createElement('div');
-            tocItem.className = 'toc-item';
-            tocItem.innerHTML = `
-                <span class="toc-number">${(index + 1).toString().padStart(2, '0')}</span>
-                <span class="toc-title">${item.title}</span>
-                <i class="fa-solid fa-arrow-right"></i>
-            `;
-
-            tocItem.addEventListener('click', () => {
-                openArticle(item);
-            });
-
+            const tocItem = createTocItem(item, index, 'discourse-list');
             tocContainer.appendChild(tocItem);
         });
     }
 
-    function openArticle(item) {
+    // Render Creative TOC
+    if (typeof creativeNonFictionWritings !== 'undefined' && creativeTocContainer) {
+        creativeNonFictionWritings.forEach((item, index) => {
+            const tocItem = createTocItem(item, index, 'creative-list');
+            creativeTocContainer.appendChild(tocItem);
+        });
+    }
+
+    function createTocItem(item, index, listId) {
+        const tocItem = document.createElement('div');
+        tocItem.className = 'toc-item';
+        tocItem.innerHTML = `
+            <span class="toc-number">${(index + 1).toString().padStart(2, '0')}</span>
+            <span class="toc-title">${item.title}</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        `;
+        tocItem.addEventListener('click', () => {
+            openArticle(item, listId);
+        });
+        return tocItem;
+    }
+
+    function openArticle(item, backTargetId) {
         if (articleTitle) articleTitle.textContent = item.title;
         if (articleContent) articleContent.innerHTML = item.content;
+
+        // Update back buttons in article view
+        if (backTargetId) {
+            articleBackBtns.forEach(btn => {
+                btn.setAttribute('data-target', backTargetId);
+            });
+        }
 
         // Change background
         if (globalBg && item.image) {
@@ -106,15 +124,5 @@ document.addEventListener('DOMContentLoaded', () => {
         switchView('article-view');
         window.scrollTo(0, 0);
     }
-
-    // Attach click event for "Discourse Studies" in the main Projects list
-    // Finding the "Discourse Studies" project item - we'll make the header clickable or the placeholder item
-    // The user had a placeholder item in index.html, let's target the "Analysis of Political Rhetoric" item to open the list
-    // OR we should have updated the link in index.html. 
-    // Let's quickly check index.html again. I see I left the placeholder items. 
-    // I will simply add a click handler to any element with data-target="discourse-list"
-
-    // Back Buttons (handled by generic navLinks if they have data-target, 
-    // but the generic handler does preventDefault, so it works fine)
 
 });
