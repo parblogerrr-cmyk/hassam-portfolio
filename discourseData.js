@@ -94,7 +94,7 @@ const discourseWritings = [
     {
         id: 11,
         title: "Critical Discourse Analysis (CDA): Power and the Peaks",
-        image: "mountain_discourse_1766764024919.png",
+        image: "cda_map_1767164679228.jpg",
         content: `
             <p>Studying Critical Discourse Analysis made me aware that language is never neutral. Every word choice reflects power, hierarchy, and authority. When I think about the Northern Areas of Pakistan, especially regions like Gilgit-Baltistan, I notice how power operates quietly through language.</p>
             <p>In official documents, education systems, and media, Urdu and English dominate. Local languages such as Shina, Burushaski, and Balti are rarely visible in formal spaces. CDA helped me understand that this absence is also a form of discourse. When a language is excluded, the identity of its speakers is pushed to the margins.</p>
