@@ -19,11 +19,12 @@ const discourseWritings = [
     },
     {
         id: 3,
-        title: "Discourse and Identity: The Borderland Soul",
+        title: "Discourse and Identity: The Borderland Self",
         image: "mountain_discourse_1766764024919.png",
         content: `
-            <p>Who is a "Northerner" in the age of globalization? Identity in our region is a fluid discourse, shaped by the rugged geography and the encroaching modern world. In this entry, I explore how identity is "performed" through language. Whether it is a Wakhi poem or a Balti protest song, the discourse we choose defines our boundaries.</p>
-            <p>We are not just Pakistanis; we are the guardians of the mountains. By analyzing personal narratives from my community, I highlight how language acts as a badge of belonging. When we speak our indigenous tongues, we reclaim an identity that is often marginalized in national discourse, asserting that our mountain heritage is an integral, distinct part of the greater Pakistani identity.</p>
+            <p>One of the most striking lessons of Discourse Studies is that identity is not fixed—it is performed through language. This idea became clearer when I reflected on multilingual communities in places like Hunza Valley.</p>
+            <p>A speaker in Hunza may use Burushaski to express intimacy and belonging, Urdu to engage with national identity, and English to signal education or global awareness. Each language activates a different version of the self. Discourse, therefore, becomes a tool for negotiating identity rather than merely expressing it.</p>
+            <p>This course helped me realize that identity in the north is layered, not divided. People do not choose between being local or national; they shift identities through discourse depending on context. Multilingualism allows them to exist at cultural borders without losing themselves.</p>
         `
     },
     {
