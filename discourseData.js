@@ -57,7 +57,7 @@ const discourseWritings = [
     {
         id: 7,
         title: "Conversational Implicatures: Reading Between the Ridges",
-        image: "mountain_discourse_1766764024919.png",
+        image: "conversational_implicatures_1767164537987.jpg",
         content: `
             <p>Before studying pragmatics, I believed that meaning existed only in what was spoken. Conversational implicatures taught me that meaning often lies in what is left unsaid. This is especially visible in the communicative culture of Northern Pakistan, particularly in regions like Chitral.</p>
             <p>In many northern communities, direct refusal is considered impolite. Instead of saying “no,” speakers rely on pauses, softened expressions, or indirect responses. Understanding these implicatures requires shared cultural knowledge. Outsiders may miss the meaning, but locals understand immediately.</p>
