@@ -94,8 +94,9 @@ const discourseWritings = [
         title: "Critical Discourse Analysis (CDA): Power and the Peaks",
         image: "mountain_discourse_1766764024919.png",
         content: `
-            <p>Critical Discourse Analysis (CDA) uncovers how language maintains power. In the context of Northern Pakistan, CDA allows us to examine how national and international discourses often "marginalize" our regional voices. This entry critiques the way the North is often spoken about in mainstream media—often reduced to "tourist spots" or "remote borders."</p>
-            <p>I analyze how local activists and writers are using "Counter-Discourse" to reclaim their narrative. By examining the power dynamics between dominant languages and our indigenous tongues, I argue that CDA is a vital tool for the intellectual liberation and empowerment of our mountain people.</p>
+            <p>Studying Critical Discourse Analysis made me aware that language is never neutral. Every word choice reflects power, hierarchy, and authority. When I think about the Northern Areas of Pakistan, especially regions like Gilgit-Baltistan, I notice how power operates quietly through language.</p>
+            <p>In official documents, education systems, and media, Urdu and English dominate. Local languages such as Shina, Burushaski, and Balti are rarely visible in formal spaces. CDA helped me understand that this absence is also a form of discourse. When a language is excluded, the identity of its speakers is pushed to the margins.</p>
+            <p>Through this course, I learned to question who gets to speak and whose voices are heard. The people of the north continue to resist this imbalance by preserving their languages in homes, storytelling, and community gatherings. CDA allowed me to see multilingualism not just as diversity, but as a site of power and struggle.</p>
         `
     },
     {
