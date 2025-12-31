@@ -20,7 +20,7 @@ const discourseWritings = [
     {
         id: 3,
         title: "Discourse and Identity: The Borderland Self",
-        image: "mountain_discourse_1766764024919.png",
+        image: "discourse_identity_1767164774709.jpg",
         content: `
             <p>One of the most striking lessons of Discourse Studies is that identity is not fixed—it is performed through language. This idea became clearer when I reflected on multilingual communities in places like Hunza Valley.</p>
             <p>A speaker in Hunza may use Burushaski to express intimacy and belonging, Urdu to engage with national identity, and English to signal education or global awareness. Each language activates a different version of the self. Discourse, therefore, becomes a tool for negotiating identity rather than merely expressing it.</p>
