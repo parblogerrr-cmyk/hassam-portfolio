@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const globalBg = document.getElementById('global-bg');
 
     // Background Configuration
-    const DEFAULT_BG = 'url("bg_red.png")';
+    const DEFAULT_BG = 'url("hassambg.png")';
     const sectionBackgrounds = {
-        'home': 'url("bg_red.png")',
+        'home': 'url("hassambg.png")',
         'about': 'url("visual_artifacts_1766764076674.png")',
         'projects': 'url("multilingual_road_1766764060824.png")',
         'contact': 'url("social_gathering_1766764042186.png")',
