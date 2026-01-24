@@ -16,7 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'projects': 'url("multilingual_road_1766764060824.png")',
         'contact': 'url("social_gathering_1766764042186.png")',
         'discourse-list': 'url("mountain_discourse_1766764024919.png")',
-        'creative-list': 'url("visual_artifacts_1766764076674.png")'
+        'creative-list': 'url("visual_artifacts_1766764076674.png")',
+        'resume': 'url("discourse_identity_1767164774709.jpg")'
     };
 
     // Navigation Logic
